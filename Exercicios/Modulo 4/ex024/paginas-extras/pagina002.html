@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Vendas Anual</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Container para permitir rolagem lateral em telas pequenas */
+        .scroll-horizontal {
+            overflow-x: auto;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 1200px; /* Garante que as colunas tenham espaço */
+            background-color: white;
+        }
+
+        caption {
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-bottom: none;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Cabeçalho fixo no topo se desejar */
+        thead th {
+            background-color: #444;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        /* Estilo Zebrado */
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Destaque ao passar o mouse */
+        tbody tr:hover {
+            background-color: #eef6ff;
+        }
+
+        /* Coluna de produtos em negrito e alinhada à esquerda */
+        tbody th {
+            text-align: left;
+            background-color: #eee;
+            color: #333;
+        }
+
+        .valor {
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Relatório de Vendas Anual</h1>
+    <p>Utilize a barra de rolagem horizontal para visualizar todos os meses do ano.</p>
+
+    <div class="scroll-horizontal">
+        <table>
+            <caption>Consolidado de Vendas - 2025</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Produtos</th>
+                    <th scope="col">Jan</th>
+                    <th scope="col">Fev</th>
+                    <th scope="col">Mar</th>
+                    <th scope="col">Abr</th>
+                    <th scope="col">Mai</th>
+                    <th scope="col">Jun</th>
+                    <th scope="col">Jul</th>
+                    <th scope="col">Ago</th>
+                    <th scope="col">Set</th>
+                    <th scope="col">Out</th>
+                    <th scope="col">Nov</th>
+                    <th scope="col">Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Notebook Pro</th>
+                    <td class="valor">10</td><td class="valor">12</td><td class="valor">15</td>
+                    <td class="valor">08</td><td class="valor">20</td><td class="valor">18</td>
+                    <td class="valor">25</td><td class="valor">22</td><td class="valor">14</td>
+                    <td class="valor">19</td><td class="valor">30</td><td class="valor">45</td>
+                </tr>
+                <tr>
+                    <th scope="row">Smartphone X</th>
+                    <td class="valor">45</td><td class="valor">38</td><td class="valor">42</td>
+                    <td class="valor">50</td><td class="valor">55</td><td class="valor">48</td>
+                    <td class="valor">60</td><td class="valor">58</td><td class="valor">52</td>
+                    <td class="valor">65</td><td class="valor">80</td><td class="valor">110</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cadeira Gamer</th>
+                    <td class="valor">05</td><td class="valor">07</td><td class="valor">04</td>
+                    <td class="valor">09</td><td class="valor">12</td><td class="valor">11</td>
+                    <td class="valor">15</td><td class="valor">13</td><td class="valor">08</td>
+                    <td class="valor">20</td><td class="valor">25</td><td class="valor">40</td>
+                </tr>
+                <tr>
+                    <th scope="row">Monitor UltraWide</th>
+                    <td class="valor">12</td><td class="valor">10</td><td class="valor">14</td>
+                    <td class="valor">11</td><td class="valor">16</td><td class="valor">15</td>
+                    <td class="valor">18</td><td class="valor">20</td><td class="valor">17</td>
+                    <td class="valor">22</td><td class="valor">28</td><td class="valor">35</td>
+                </tr>
+                <tr>
+                    <th scope="row">Placa de Vídeo</th>
+                    <td class="valor">08</td><td class="valor">06</td><td class="valor">09</td>
+                    <td class="valor">07</td><td class="valor">10</td><td class="valor">12</td>
+                    <td class="valor">14</td><td class="valor">11</td><td class="valor">09</td>
+                    <td class="valor">15</td><td class="valor">22</td><td class="valor">30</td>
+                </tr>
+                <tr>
+                    <th scope="row">SSD 1TB</th>
+                    <td class="valor">100</td><td class="valor">95</td><td class="valor">110</td>
+                    <td class="valor">105</td><td class="valor">120</td><td class="valor">115</td>
+                    <td class="valor">130</td><td class="valor">125</td><td class="valor">110</td>
+                    <td class="valor">140</td><td class="valor">160</td><td class="valor">200</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
