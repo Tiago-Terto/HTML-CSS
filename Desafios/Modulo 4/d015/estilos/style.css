@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* PALETA DE CORES - URBAN ELEGANCE
+   Inspirada na arquitetura clássica e tons urbanos da imagem.
+
+   - Azul Horizonte: #87A7D6 (Céu e reflexos)
+   - Bege Arenito: #C2B49A (Fachada de pedra iluminada)
+   - Bronze Arquitetônico: #7D6B5D (Detalhes de sombras e janelas)
+   - Sombra Urbana: #3A3A3B (Estruturas escuras e profundidade)
+   - Branco Off-white: #F4F4F2 (Destaques de luz e superfícies limpas)
+*/
+
+:root {
+    /* Cores Principais */
+    --color-primary: #3A3A3B;       /* Sombra Urbana - Ideal para Botões e Títulos */
+    --color-secondary: #7D6B5D;     /* Bronze Arquitetônico - Ideal para estados Hover */
+    
+    /* Cores de Fundo e Superfície */
+    --color-bg-main: #F4F4F2;       /* Branco Off-white - Fundo da aplicação */
+    --color-surface: rgba(255, 255, 255, 0.8); /* Para efeito de transparência no Card */
+    
+    /* Cores de Detalhe e Suporte */
+    --color-accent: #87A7D6;        /* Azul Horizonte - Links e Ícones */
+    --color-border: #C2B49A;        /* Bege Arenito - Bordas de Inputs */
+    
+    /* Tipografia */
+    --text-main: #3A3A3B;
+    --text-muted: #7D6B5D;
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--color-secondary);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    
+    background-color: var(--color-bg-main);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+
+}
+
+section#login > div#imagem {
+    display: block;
+    background: var(--color-accent) url(../imagens/entrada.jpg) center bottom no-repeat;
+    background-size: 150%;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
