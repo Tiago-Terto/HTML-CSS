@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+:root {
+    /* Cores Principais */
+    --color-primary: #3A3A3B;       /* Sombra Urbana - Ideal para Botões e Títulos */
+    --color-secondary: #7D6B5D;     /* Bronze Arquitetônico - Ideal para estados Hover */
+    
+    /* Cores de Fundo e Superfície */
+    --color-bg-main: #F4F4F2;       /* Branco Off-white - Fundo da aplicação */
+    --color-surface: rgba(255, 255, 255, 0.8); /* Para efeito de transparência no Card */
+    
+    /* Cores de Detalhe e Suporte */
+    --color-accent: #87A7D6;        /* Azul Horizonte - Links e Ícones */
+    --color-border: #C2B49A;        /* Bege Arenito - Bordas de Inputs */
+    
+    /* Tipografia */
+    --text-main: #3A3A3B;
+    --text-muted: #7D6B5D;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, var(--color-primary), var(--color-secondary));
+    }
+
+
+    section#login {
+        width: 90vw;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        background-image: cover;
+        width: 40%;
+        height: 110%;
+
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 60%;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    body {
+        background-image: linear-gradient(to top, var(--color-primary), var(--color-secondary));
+    }
+
+    section#login {
+        width: 800px;
+    }
+    
+    section#login > div#imagem {
+        float: left;
+        width: 40%;
+        height: 110%;
+
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 60%;
+    }
+}
