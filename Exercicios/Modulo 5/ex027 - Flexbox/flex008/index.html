@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        * {
+            font-family: monospace;
+            font-size: 1.1em;
+        }
+
+        div.conteiner {
+            background-color: antiquewhite;
+
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 3px dashed black;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            
+            flex-basis: 50px;
+            flex-grow: 0;
+
+            /*
+            -- Posso Encolher ou Crescer?--
+            flex-shrink: 1; Pode encolher
+            flex-grow: 0; - Não pode crescer
+
+            Também posso colocar valores diferentes de 0 e 1, se colocar 2, este elemento ira crescer o dobro de 1.
+            */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" style="flex-grow: 1;">AA</div>
+        <div class="item" style="flex-grow: 2;">BBB</div>
+        <div class="item">CCCCCC</div>
+        <div class="item">DDD</div>
+        <div class="item">E</div>
+        <div class="item">FFFF</div>
+        <div class="item">GG</div>
+    </div>
+</body>
+</html>

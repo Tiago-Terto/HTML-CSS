@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        * {
+            font-family: monospace;
+            font-size: 1.2em;
+        }
+
+        div.conteiner {
+            background-color: antiquewhite;
+            height: 90vh;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 3px dashed black;
+            border-radius: 20px;
+            text-align: center;
+            padding: 50px;
+            
+            /*
+            order: 0; - Númerar elementos para ordenar, ordem crescente
+
+            aling-self = ; - Alinhamento próprio no cross-axis
+                auto - coleta do pai
+                flex-start - cross-start
+                ...
+            */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" style="order: 8; align-self: auto">A</div>
+        <div class="item" style="order: -2; align-self: center">B</div>
+        <div class="item" style="order: 0; align-self: flex-start">C</div>
+        <div class="item" style="order: 6; align-self: flex-end">D</div>
+        <div class="item" style="order: 9; align-self: stretch">E</div>
+        <div class="item" style="order: 2; align-self: stretch">F</div>
+        <div class="item" style="order: 5; align-self: auto">G</div>
+    </div>
+</body>
+</html>

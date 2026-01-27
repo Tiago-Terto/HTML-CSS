@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        * {
+            font-family: monospace;
+            font-size: 1.2em;
+        }
+
+        div.conteiner {
+            background-color: antiquewhite;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 3px dashed black;
+            border-radius: 20px;
+            text-align: center;
+            padding: 50px;
+            
+            flex-basis: 100px; 
+            /*
+            -- Tamanho do Elemento Flexível--
+            flex-basis: auto; 
+            flex-basis: 200px; 
+            */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">AA</div>
+        <div class="item">BBB</div>
+        <div class="item">CCCCCC</div>
+        <div class="item">DDD</div>
+        <div class="item">E</div>
+        <div class="item">FFFF</div>
+        <div class="item">GG</div>
+    </div>
+</body>
+</html>
