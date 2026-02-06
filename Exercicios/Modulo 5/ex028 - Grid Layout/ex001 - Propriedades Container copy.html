@@ -13,22 +13,36 @@
         -- Propriedades Container --
         display: grid;
         - Virá um grid container
-        grid-template-columns: auto auto auto;
         grid-template-rows: 100px 100px 100px;
+        grid-template-columns: auto auto auto;
+            grid-template: ;
+
         grid-gap: 10px;
 
         align-items: ;
         justify-items: ;
-        - Alinha os itens
+            place-items: ;
+            - Alinha os itens
+
         align-content: ;
         justify-content ;
-        - Alinha o todos os itens no container
-
+            place-content: ;
+            - Alinha o todos os itens no container
+            
         grid-auto-row: ;
         grid-auto-column;
+        grid-auto-flow: ;
         place-items: ;
         place-content: ;
         grid-template: ;
+
+        função repeat();
+            grid-template: repeat(3, 100px) / repeat(3,auto);
+
+        Unidade fracional
+            grid-template-columns: 1fr 2fr 1fr;
+
+        
         */
         div.container {
             background-color: rgb(255, 236, 214);
@@ -37,14 +51,23 @@
 
 
             display: grid;
-            grid-template-columns: 50px auto 50px;
+            /*
+            grid-template-columns: 1fr 2fr 1fr;
             grid-template-rows: 100px 100px 100px;
+            */
+            grid-template: repeat(3, 100px) / 1fr 2fr 1fr;
             gap: 5px;
 
-            align-items: normal;
-            justify-content: normal;
+            /*
+            align-items: center;
+            justify-items: normal;
             align-content: space-evenly;
             justify-content: space-between;
+            */
+
+        
+
+
         }
 
         div.item {
